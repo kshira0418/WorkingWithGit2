@@ -76,7 +76,7 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Create a dictionary where key=country name and value=List of cities. Add a new city for US &amp; write all the cities from US. Remove a city from the list for UK &amp; write all the cities from UK. " DisplayName="Dictionary And Lists Demo" sap:VirtualizedContainerService.HintSize="684.4000000000001,1628" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Create a dictionary where key=country name and value=List of cities. Add a new city for US &amp; write all the cities from US. Remove a city from the list for UK &amp; write all the cities from UK. " DisplayName="Dictionary And Lists Demo" sap:VirtualizedContainerService.HintSize="799.6,2426.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, scg:List(x:String))" Name="Cities" />
     </Sequence.Variables>
@@ -86,53 +86,55 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage sap2010:Annotation.AnnotationText="2026/7/31：本Projectそのものは単なる例。&#xA;Videoに沿ってGitへの更新を実施。&#xA;よく理解できないうちに時間切れ、明日もう一度トライ！&#xA;&#xA;2026/8/1：Git Hubの利用方法&#xA;1.サインイン&#xA;　https://github.comにサインイン&#xA;　UID：kshira0418@yahoo.co.jp&#xA;　PWD：Ks0418**&#xA;　UiPathと同じにした。&#xA;2.リポジトリの作成&#xA;　github上でリポジトリを作成&#xA;　「WorkingWithGit2」と命名した。&#xA;3.Studio上での操作&#xA;　①ホーム - ツール - プラグインでGitを有効にする。&#xA;　　今回は、SVN、TFSは無効にする。&#xA;　②Git Init&#xD;&#xA;　　以下の操作で、先ずリモート/ローカル双方のリポジトリ&#xD;&#xA;　　にProjectをセットする。&#xD;&#xA;　　・ Git Init&#xD;&#xA;　　・ &#xA;　　" DisplayName="メッセージをログ" sap:VirtualizedContainerService.HintSize="449.6,496" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;開始します。&quot;]">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:LogMessage>
-    <Assign DisplayName="Create New Dictionary" sap:VirtualizedContainerService.HintSize="449.6,174.4" sap2010:WorkflowViewState.IdRef="Assign_1">
-      <Assign.To>
-        <OutArgument x:TypeArguments="scg:Dictionary(x:String, scg:List(x:String))">[Cities]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="scg:Dictionary(x:String, scg:List(x:String))">[new Dictionary(of String, List(Of String))]</InArgument>
-      </Assign.Value>
-    </Assign>
-    <uasc:BuildCollection x:TypeArguments="x:String" Items="{x:Null}" DisplayName="Build collection Cities US" FirstItem="New York" sap:VirtualizedContainerService.HintSize="449.6,174.4" sap2010:WorkflowViewState.IdRef="BuildCollection`1_2" Result="[Cities(&quot;US&quot;)]">
-      <uasc:BuildCollection.NextItems>
-        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-          <InArgument x:TypeArguments="x:String">Chicago</InArgument>
-          <InArgument x:TypeArguments="x:String">Seattle</InArgument>
-          <InArgument x:TypeArguments="x:String">San Francisco</InArgument>
-        </scg:List>
-      </uasc:BuildCollection.NextItems>
-    </uasc:BuildCollection>
-    <uasc:BuildCollection x:TypeArguments="x:String" Items="{x:Null}" DisplayName="Build collection Cities UK" FirstItem="London" sap:VirtualizedContainerService.HintSize="449.6,174.4" sap2010:WorkflowViewState.IdRef="BuildCollection`1_4" Result="[Cities(&quot;UK&quot;)]">
-      <uasc:BuildCollection.NextItems>
-        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-          <InArgument x:TypeArguments="x:String">Manchester</InArgument>
-          <InArgument x:TypeArguments="x:String">Bristol</InArgument>
-          <InArgument x:TypeArguments="x:String">Edinburgh</InArgument>
-        </scg:List>
-      </uasc:BuildCollection.NextItems>
-    </uasc:BuildCollection>
-    <uasc:AppendItemToCollection x:TypeArguments="x:String" Collection="[Cities(&quot;US&quot;)]" DisplayName="Append item to collection" sap:VirtualizedContainerService.HintSize="449.6,173.6" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_8">
-      <uasc:AppendItemToCollection.Items>
-        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-          <InArgument x:TypeArguments="x:String">Portland</InArgument>
-        </scg:List>
-      </uasc:AppendItemToCollection.Items>
+    <Sequence sap2010:Annotation.AnnotationText="2026/7/31：本Projectそのものは単なる例。&#xA;Videoに沿ってGitへの更新を実施。&#xA;よく理解できないうちに時間切れ、明日もう一度トライ！&#xA;&#xA;2026/8/1：Git Hubの利用方法&#xA;1.サインイン&#xA;　https://github.comにサインイン&#xA;　UID：kshira0418@yahoo.co.jp&#xA;　PWD：Ks0418**&#xA;　UiPathと同じにした。&#xA;&#xA;2.リポジトリの作成＜管理者の立場＞&#xA;　github上でリポジトリを作成&#xA;　「WorkingWithGit2」と命名した。&#xA;&#xA;3.Studio上での操作＜管理者の立場＞&#xA;　①ホーム - ツール - プラグインでGitを有効にする。&#xA;　　今回は、SVN、TFSは無効にする。&#xA;　②Git Init&#xA;　　以下の操作で、先ず初版として、リモート/ローカル双方&#xA;　　のリポジトリにProjectをセットする。&#xA;　　・ Git Init&#xA;　　・ ローカルのフォルダはProject Folderにした。&#xA;　　・ 「変更をコミット」画面で「コミットしてプッシュする」&#xA;　　・ リモートの指定&#xA;　　　名前：WorkingWithGit2&#xA;　　　URL：https://github.com/kshira0418/WorkingWithGit2.git&#xA;　　　　　（step2で作成したリポジトリのURLを指定する）&#xA;　　・ 追加で、入力したURLがセットされる。&#xA;　　・ 保存で、資格情報入力を問われる。&#xA;　　　資格情報の指定方法は以下の4種&#xA;ⅰ「資格情報マネージャー」はWindowへの登録だと思うので今回は避けた&#xA;ⅱ「ユーザー/パスワード」で上記のGitHubアカウントを指定するも認証エラーとなる&#xA;ⅲ「GitoHubでサインイン」は、GitHubにサインイン状態でOKとなった。&#xA;ⅳ「トークン」はやり方が不明なので避けた。&#xA;　　結果、Project Folderに追加されたのは以下2個&#xA;　　.gitフォルダ&#xA;　　.gitignoreファイル&#xA;　　③切断&#xA;&#xA;　4.Studio上での操作＜開発者の立場＞&#xA;　　①リポジトリを複製&#xA;　　　名前：WorkingWithGit2&#xA;　　　URL：https://github.com/kshira0418/WorkingWithGit2.git&#xA;　　　資格情報：GitoHubでサインイン&#xA;　　　複製先：C:\Users\白根康司\OneDrive - 株式会社しんゆう\ドキュメント\WORK(仕事)\WorkingWithGit2&#xA;　　②StudioでProjectを修正&#xA;　　③コミット&#xA;　　　StudioのエクスプローラのProject名を右クリックで表示されるメニューから。&#xA;　　　コミットの修正をチェック（プッシュを行う前に直前のコミット内容を変更可能）&#xA;　　　コミットしてプッシュ&#xA;　　　現在のブランチ（Main）が最新ではないという通知が表示される。&#xA;　　　つまり、リモートリポジトリ上のプロジェクトに加えられた変更が、現在反映され&#xA;　　　ていない状態（多分、他の開発者が修正した内容をどうするのかの事だと、&#xA;　　　推測）。&#xA;　　　ここでの選択肢は、&#xA;　　　・リモートの内容を上書きするか、&#xA;　　　・リモートリポジトリから最新のファイルを取得（プル）した上でプッシュする&#xA;　　　内容を選択するかのいずれか。&#xA;　　　[Pull (rebase)]（プル（リベース））をクリック。&#xD;&#xA;　　　⇒コンフリクト解決画面が表示される。&#xD;&#xA;　　　　これは、Gitには判断できない、人間に判断を委ねている画面。&#xD;&#xA;　　　　Activity毎に右か左かを選択可能" DisplayName="シーケンス" sap:VirtualizedContainerService.HintSize="449.6,2358.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-    </uasc:AppendItemToCollection>
-    <uasc:RemoveFromCollection x:TypeArguments="x:String" Index="{x:Null}" Collection="[Cities(&quot;UK&quot;)]" DisplayName="Remove London from UK Cities" sap:VirtualizedContainerService.HintSize="449.6,251.2" sap2010:WorkflowViewState.IdRef="RemoveFromCollection`1_2" Item="London" RemoveAllElements="False" Result="[Cities(&quot;UK&quot;)]" />
-    <ui:LogMessage DisplayName="Print Resulting US and UK cities" sap:VirtualizedContainerService.HintSize="449.6,116" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;US Cities : &quot;+ String.Join(&quot;, &quot;,Cities(&quot;US&quot;)) + vbLf + &quot;and&quot; + vbLf + &quot;UK Cities : &quot;+ String.Join(&quot;, &quot;,Cities(&quot;UK&quot;))]" />
+      <ui:LogMessage DisplayName="メッセージをログ" sap:VirtualizedContainerService.HintSize="416,124.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;開始します。&quot;]" />
+      <Assign DisplayName="Create New Dictionary" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, scg:List(x:String))">[Cities]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, scg:List(x:String))">[new Dictionary(of String, List(Of String))]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <uasc:BuildCollection x:TypeArguments="x:String" Items="{x:Null}" DisplayName="Build collection Cities US" FirstItem="Kyoto" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="BuildCollection`1_2" Result="[Cities(&quot;US&quot;)]">
+        <uasc:BuildCollection.NextItems>
+          <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+            <InArgument x:TypeArguments="x:String">Chicago</InArgument>
+            <InArgument x:TypeArguments="x:String">Seattle</InArgument>
+            <InArgument x:TypeArguments="x:String">San Francisco</InArgument>
+          </scg:List>
+        </uasc:BuildCollection.NextItems>
+      </uasc:BuildCollection>
+      <uasc:BuildCollection x:TypeArguments="x:String" Items="{x:Null}" DisplayName="Build collection Cities UK" FirstItem="London" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="BuildCollection`1_4" Result="[Cities(&quot;UK&quot;)]">
+        <uasc:BuildCollection.NextItems>
+          <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+            <InArgument x:TypeArguments="x:String">Manchester</InArgument>
+            <InArgument x:TypeArguments="x:String">Bristol</InArgument>
+            <InArgument x:TypeArguments="x:String">Edinburgh</InArgument>
+          </scg:List>
+        </uasc:BuildCollection.NextItems>
+      </uasc:BuildCollection>
+      <uasc:AppendItemToCollection x:TypeArguments="x:String" Collection="[Cities(&quot;US&quot;)]" DisplayName="Append item to collection" sap:VirtualizedContainerService.HintSize="416,173.6" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_8">
+        <uasc:AppendItemToCollection.Items>
+          <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+            <InArgument x:TypeArguments="x:String">Portland</InArgument>
+          </scg:List>
+        </uasc:AppendItemToCollection.Items>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uasc:AppendItemToCollection>
+      <uasc:RemoveFromCollection x:TypeArguments="x:String" Index="{x:Null}" Collection="[Cities(&quot;UK&quot;)]" DisplayName="Remove London from UK Cities" sap:VirtualizedContainerService.HintSize="416,251.2" sap2010:WorkflowViewState.IdRef="RemoveFromCollection`1_2" Item="London" RemoveAllElements="False" Result="[Cities(&quot;UK&quot;)]" />
+      <ui:LogMessage DisplayName="Print Resulting US and UK cities" sap:VirtualizedContainerService.HintSize="416,116" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;US Cities : &quot;+ String.Join(&quot;, &quot;,Cities(&quot;US&quot;)) + vbLf + &quot;and&quot; + vbLf + &quot;UK Cities : &quot;+ String.Join(&quot;, &quot;,Cities(&quot;UK&quot;))]" />
+    </Sequence>
   </Sequence>
 </Activity>
